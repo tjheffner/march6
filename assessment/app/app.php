@@ -26,16 +26,11 @@ $app->post("/add_contact", function() use ($app) {
 });
 
 //this page should show the delete confirmation
+$app->post("/delete", function() use ($app) {
+return $app['twig']->render('delete.twig', array('contacts' => Contact::deleteAll()));
+});
+
 
 return $app;
 
 ?>
-
-<html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-
-  </body>
-</html>
