@@ -13,8 +13,8 @@
         <ul>
           {% for contact in contacts %}
           {{ contact.getName }}
-          <li> {{ car.getPhone }} </li>
-          <li> {{ car.getAddress }} </li>
+          <li> {{ contact.getPhone }} </li>
+          <li> {{ contact.getAddress }} </li>
           {% endfor %}
         </ul>
       {% endif %}
