@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Contact Added</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>Added contact!</h1>
+    <p>Here is your contact:</p>
+    <ul>{{ newcontact.getName }}
+      <li> {{ newcontact.getPhone }} </li>
+      <li>{{ newcontact.getAddress }} </li>
+    </ul>
+    <p><a href='/'>Add another contact</a></p>
+  </body>
+</html>
